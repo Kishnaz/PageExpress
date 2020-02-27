@@ -1,5 +1,6 @@
 Once you clone above code to your local repo, following can be used:
 
+$ cd /dev
 
 To Create Stack
 
