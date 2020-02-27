@@ -10,8 +10,8 @@ Update variables part of terraform.tfvars file at the location if you are creati
 
 $ terraform apply -var-file=preprod.tfvars -auto-approve
 
-After creation of stack, if it is desired to tear down the stack following command is to be used:
 
+After creation of stack, if it is desired to tear down the stack following command is to be used:
 
 To Tear down created Stacks
 
