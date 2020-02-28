@@ -4,10 +4,6 @@ variable "Region" {
   type        = string
   description = "Region that we wish to deploy into."
 }
-variable "FinancialIdentifier" {
-  type        = number
-  description = "Financial Identifier that running costs should be attributed to."
-}
 
 variable "ResourceOwner" {
   type        = string
@@ -19,7 +15,7 @@ variable "ApplicationAssetInsightId" {
   description = "Application Asset ID - See https://assets.int.thomsonreuters.com for more details"
 }
 
-variable "EnvironmentType" {
+variable "Environment" {
   type        = string
   description = "Type of the environment. Allowed values are DEVELOPMENT,NONPROD,PROD"
 }
@@ -28,11 +24,11 @@ variable "account_alias" {
   type        = string
   description = "Profile that needs to be used."
 }
-variable "project_name" {
+variable "ProjectName" {
   type        = string
   description = "Project Name to be used."
 }
-variable "environment" {
+variable "subEnv" {
   type        = string
   description = "Environment."
 }
