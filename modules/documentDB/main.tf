@@ -7,7 +7,7 @@ provider "aws" {
 }
 
 resource "aws_docdb_cluster" "docdb" {
-  cluster_identifier          = lower("a${var.ApplicationAssetInsightId}-${var.EnvironmentType}-${var.environment}")
+  cluster_identifier          = lower("a${var.ApplicationAssetInsightId}-${var.Environment}-${var.subEnv}")
   master_username             = var.username
   master_password             = var.password
   backup_retention_period     = 5
@@ -21,7 +21,7 @@ resource "aws_docdb_cluster" "docdb" {
 resource "aws_docdb_cluster_instance" "cluster_instances" {
  # count              = 2
  # identifier         = lower("a${var.ApplicationAssetInsightId}-${var.EnvironmentType}-${count.index}")
-  identifier         = lower("a${var.ApplicationAssetInsightId}-${var.EnvironmentType}")
+  identifier         = lower("a${var.ApplicationAssetInsightId}-${var.Environment}")
   cluster_identifier = aws_docdb_cluster.docdb.id
   instance_class     = var.InstanceClass
   tags               = local.tags
