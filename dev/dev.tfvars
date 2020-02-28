@@ -8,7 +8,7 @@ ProjectName               = "Page_Express"
 subEnv                    = "dev"
 username                  = "trustdbadmin"
 password                  = "trustdbpassword"
-#db_subnet_group_name      = "dbs-subnetgroup-desktop-sdlc-preprod-ap-south-1"
-#vpc_security_group_ids    = ["sg-06832e71"]
+#db_subnet_group_name     = "dbs-subnetgroup-desktop-sdlc-preprod-ap-south-1"
+#vpc_security_group_ids   = ["sg-06832e71"]
 InstanceClass             = "db.r5.large"
 
