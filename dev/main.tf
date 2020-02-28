@@ -4,15 +4,14 @@ provider "aws" {
   profile = var.account_alias
 }
 module "documentDB" {
-  source                    = "/Users/kishnaz/Desktop/Terraform tutorial/getting started terraform/m7/module/documentDB"
+  source                    = "/Users/kishnaz/Desktop/Terraform tutorial/getting started terraform/pageExpress/modules/documentDB"
   Region                    = var.Region
-  FinancialIdentifier       = var.FinancialIdentifier
   ResourceOwner             = var.ResourceOwner
   ApplicationAssetInsightId = var.ApplicationAssetInsightId
-  EnvironmentType           = var.EnvironmentType
+  Environment               = var.Environment
   account_alias             = var.account_alias
-  project_name              = var.project_name
-  environment               = var.environment
+  ProjectName               = var.ProjectName
+  subEnv                    = var.subEnv
   username                  = var.username
   password                  = var.password
   #db_subnet_group_name      = var.db_subnet_group_name
